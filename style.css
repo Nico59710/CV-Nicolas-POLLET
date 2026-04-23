@@ -6,6 +6,7 @@
 	--accent: #d28b36;
 	--line: rgba(34, 71, 84, 0.14);
 }
+
 /*  */
 .print-only {
 	display: none;
@@ -174,9 +175,11 @@ h1 {
 	gap: 14px;
 	margin-top: 28px;
 }
+
 .meta-item-no-border {
 	border: none;
 }
+
 .meta-item {
 	padding-bottom: 14px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -189,6 +192,17 @@ h1 {
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	color: rgba(249, 250, 247, 0.58);
+}
+
+.tag-list li,
+.highlight li {
+	transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.tag-list li:hover,
+.highlight li:hover {
+	color: var(--accent);
+	transform: scale(1.05);
 }
 
 .contact-link {
@@ -289,6 +303,11 @@ h1 {
 	border-radius: 20px;
 	background: rgba(255, 255, 255, 0.72);
 	box-shadow: 0 10px 24px rgba(34, 71, 84, 0.06);
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+	}
+.entry-card:hover {
+	box-shadow: 0 18px 38px rgba(34, 71, 84, 0.14);
+	transform: scale(1.01);
 }
 
 .entry-card h3 {
@@ -330,6 +349,11 @@ h1 {
 	border-radius: 20px;
 	background: rgba(255, 255, 255, 0.72);
 	box-shadow: 0 10px 24px rgba(34, 71, 84, 0.06);
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.panel:hover {
+	box-shadow: 0 18px 38px rgba(34, 71, 84, 0.14);
+	transform: scale(1.01);
 }
 
 .panel h3 {
@@ -429,7 +453,7 @@ h1 {
 		text-shadow: none !important;
 	}
 
-	#outils #contact{
+	#outils #contact {
 		text-align: center;
 	}
 
@@ -545,6 +569,7 @@ h1 {
 	.panel h3 {
 		color: #000 !important;
 	}
+
 
 	.job-role {
 		margin: 6px 0 8px;
