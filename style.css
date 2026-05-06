@@ -310,6 +310,13 @@ h1 {
 	transform: scale(1.01);
 }
 
+.RGPD p{
+	font-size: 0.7rem;
+	line-height: 1;
+	color: var(--muted);
+	font-style: italic;
+}
+
 .entry-card h3 {
 	margin: 0;
 	font-size: 1.16rem;
